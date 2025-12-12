@@ -40,7 +40,7 @@ pygame.mixer.init()
 pygame.mixer.music.load("Music.mp3")
 
 pygame.mixer.music.play(-1)
-pygame.mixer.music.set_volume(0.01)
+pygame.mixer.music.set_volume(0.3)
 #----------------------------------:
 
 #:COUNTER, FILING & AUDIO-----------------:
@@ -75,24 +75,24 @@ pygame.draw.line(bg, color2, (0, 300), (800, 300), 50)
 pygame.draw.line(bg, color2, (0, 350), (800, 350), 20)
 #-----------------------------------------------------:
 
-#:RESTART--------:
-def reset_game():
-    count = 0
-    return count
+#:RESTART---------:
+#def reset_game(): 
+    #count = 0
+    #return game_state
 
-game_state = reset_game()
+
+#game_state = reset_game()
+#-------------------------:
 
 #:RUN & RENDER---:
 is_running = True
 
-while is_running:   
+while is_running: 
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
-            is_running = False
+            is_running = False         
         button.handle_event(event)
-    
-    
-     
+
     window_surface.blit(bg, (0, 0))
     button.draw(window_surface)
 

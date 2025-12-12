@@ -32,6 +32,14 @@ V: 1.2
 - Added BG music
 - Caption look changed
 - Moved Button.class to separate .py file
+- Unfinished saving code
+---
+V: 1.3
+--
+-
+-
+-
+-
 ---
 ## FUTURE PLANS:
 - I am thinking of trying to make more buttons to click and actual prints when you reach a certain click amount. maybe also changing BG's but i'm not so sure about that yet.
