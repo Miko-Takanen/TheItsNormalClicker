@@ -39,6 +39,7 @@ V: 1.3 Shops & Songs Update + Misc
 - Added randomized BG music
 - Moved music code lower into *RUN & RENDER* Section
 - Added placeholder shop (openable but only text in it)
+- Added Reset button
 - Shortened some of the code
 - Organized assets into folders
 - Changed how the text is rendered in main.py
