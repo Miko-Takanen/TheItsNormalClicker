@@ -1,0 +1,13 @@
+Name: dfTimes df has clicked: 1
+Times df has clicked: 2
+Times df has clicked: 3
+Times df has clicked: 4
+Times df has clicked: 5
+Times df has clicked: 6
+Times df has clicked: 7
+Game has been reset.
+Times df has clicked: 1
+Times df has clicked: 2
+Times df has clicked: 3
+Times df has clicked: 4
+Game has been reset.

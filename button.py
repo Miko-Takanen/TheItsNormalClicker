@@ -26,7 +26,7 @@ class Button:
                 self.current_image = self.images['normal']
             
     def draw(self, surface):
-        surface.blit(self.current_image, self.rect)
+        surface.blit(self.current_image, self.rect.topleft)
 #--------------------------------------------------:
 
 
