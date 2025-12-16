@@ -5,13 +5,21 @@ import pygame
 import random
 import shop
 from button import Button
+from playername import get_player_name
 from pygame.locals import *
-#--------------------------:
+#-------------------------------------:
 
 #:VARIABLES--:
 pygame.init()
-player_name = (input("Enter name:"))
-#-----------------------------------:
+window_surface = pygame.display.set_mode((800, 600))
+player_name = get_player_name(window_surface)
+#--------------------------------------------:
+
+#:IMAGES----------------------------------------------------------------------:
+normal_img = pygame.image.load("assets/images/btn_normal.png").convert_alpha()
+hover_img = pygame.image.load("assets/images/btn_hover.png").convert_alpha()
+down_img = pygame.image.load("assets/images/btn_down.png").convert_alpha()
+#-------------------------------------------------------------------------:
 
 #:CAPTIONS---:
 sentences = [
@@ -27,22 +35,13 @@ title = (f"Hi {player_name}! | {random_sentence}")
 pygame.display.set_caption(title)
 #--------------------------------:
 
-#:DP-SIZE & IMAGES----------------------------------:
-window_surface = pygame.display.set_mode((800, 600))
-
-normal_img = pygame.image.load("assets/images/btn_normal.png").convert_alpha()
-hover_img = pygame.image.load("assets/images/btn_hover.png").convert_alpha()
-down_img = pygame.image.load("assets/images/btn_down.png").convert_alpha()
-#-----------------------------------------------------------:
-
 #add .ogg or .wav files and remove all "#" from all audio related code.
-#:AUDIO FILES-----------------------------:
-#audio_files = ["audio_test dont use.mp3"] 
-
+#:MUSIC FILES--:
 music_files = [
 "assets/audio/Music.mp3", 
-"assets/audio/LLG.mp3", 
-"assets/audio/LLG2.mp3"
+"assets/audio/Music2.mp3", 
+"assets/audio/Music3.wav",
+"assets/audio/Music4.mp3"
 ]
 
 pygame.init()
@@ -57,10 +56,9 @@ def on_button_click():
     global count
     count += 1
     print(f"{player_name} clicked Routine_ball {count} times.")
-    
-    #random_audio = random.choice(audio_files)
-    #click_sound = pygame.mixer.Sound(random_audio)
-    #click_sound.set_volume(1.0)
+    click_sound = pygame.mixer.Sound("assets/audio/click.mp3")
+    click_sound.set_volume(1.0)
+    click_sound.play()
     
     with open("assets/clicker_count.txt", "a") as file:
         file.write(f"Times {player_name} has clicked: {count}\n")
@@ -74,6 +72,8 @@ button = Button(
 #:BG COLORING-----------:
 color1 = (165, 200, 230)
 color2 = (255, 206, 27)
+color3 = (255, 255, 0)
+color4 = (0, 149, 228)
 
 bg = pygame.Surface((800, 600))
 bg.fill(color1)
@@ -109,13 +109,23 @@ while is_running:
         if event.type == pygame.KEYDOWN and event.key == pygame.K_r:
             count = reset_game()
             print("Game Reset!")
+        
         if in_shop:
+            pygame.mixer.music.set_volume(0.1)
             if event.type == pygame.KEYDOWN and event.key == pygame.K_ESCAPE:
                 in_shop = False
+                pygame.mixer.music.set_volume(0.3)
         else:
             button.handle_event(event)
             if event.type == pygame.KEYDOWN and event.key == pygame.K_s:
                 in_shop = True
+        if event.type == pygame.KEYDOWN and event.key == pygame.K_n:
+                if music_playing:
+                    print("Song Skipped!")
+                    
+                    random_music = random.choice(music_files)
+                    pygame.mixer.music.load(random_music)
+                    pygame.mixer.music.play(1)
 
     if not music_playing:
         random_music = random.choice(music_files)
@@ -128,16 +138,18 @@ while is_running:
         music_playing = False
 
     if in_shop:
-        window_surface.fill((200, 200, 200))
+        window_surface.fill(color3)
+        pygame.draw.line(window_surface, color4, (0, 300), (800, 300), 50)
+        pygame.draw.line(window_surface, color4, (0, 350), (800, 350), 20)
         shop.draw_shop(window_surface, count)
     else:
         window_surface.blit(bg, (0, 0))
         button.draw(window_surface)
 
         render_text(window_surface, f"Clicked: {count}", 36, (0, 120, 255), (5, 235))
-        render_text(window_surface, "The It's Normal Clicker V1.3", 50, (0, 0, 0), (15, 34))
-        render_text(window_surface, "The It's Normal Clicker V1.3", 50, (255, 255, 255), (13, 32))
-        render_text(window_surface, "S = Shop | R = Reset Count", 50, (255, 206, 27), (15, 530))
+        render_text(window_surface, "The It's Normal Clicker V1.4", 50, (0, 0, 0), (15, 34))
+        render_text(window_surface, "The It's Normal Clicker V1.4", 50, (255, 255, 255), (13, 32))
+        render_text(window_surface, "S = Go to Shop | R = Reset Count | N = Skip Song", 35, (255, 206, 27), (5, 562))
             
     pygame.display.flip()
 #------------------------:

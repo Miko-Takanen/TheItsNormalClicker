@@ -3,14 +3,22 @@
 
 
 ## Description:
-This is a simple clicker game based on the character *Routine*.
+This is a simple clicker game based mainly on the character *Routine*.
 
 this clicker includes a nice simple bg, changing caption, and random sounds.
 this code makes a .txt file to keep track on your clicks, but this program currently doesnt save said clicks when u close the program.
 
 ### Requirements:
-I recommend running this program in Visual Code Studio or some other app that you can access the terminal in.
-Also this imports *Pygame* and *Random* into the project.
+I recommend running this program in Visual Code Studio or some other app that you can access the terminal in. Though probably not needed.
+Also this imports *Pygame*, *Random* and *Pygame.locals* into the project.
+
+## Disclaimers:
+- Do not move objects from their respective folders.
+- Do not remove needed code.
+- Do not claim your ownership of this project. Always credit me (pls)
+- If there are problems. Contact me on here or discord:
+
+***.kisurepo_kristalli.***
 
 # Changelogs:
 V: 1.0 1st Creation
@@ -44,6 +52,16 @@ V: 1.3 Shops & Songs Update + Misc
 - Organized assets into folders
 - Changed how the text is rendered in main.py
 ---
+V: 1.4 Clicking and Claking Update + Misc
+--
+- Added new *Enter Name* interface/ .py file
+- Added alternative BG to shop
+- Added final songs to randomizer
+- Added ability to skip songs
+- Added click sound to button
+- Removed the randomization of clicking sounds
+- > Added disclaimer section to README
+---
 ## FUTURE PLANS:
 - I am thinking of trying to make more buttons to click and actual prints when you reach a certain click amount. maybe also changing BG's but i'm not so sure about that yet.
 
@@ -52,8 +70,8 @@ V: 1.3 Shops & Songs Update + Misc
 - Add working saving progress so you can continue from u left off.
 ---
 > ## Copyright:
- > Routine character is owned by the person **YonKaGor**, I do not own Routine and i recommend supporting said person. also sound effects are cropped from a song by the same person. The song is named "It's Normal" (which is also the bg music, so obviously I don't own that either.)
-    >>but almost all code is made by scratch by me. and you are allowed to use it for ur own projects.
+ > Routine character is owned by the person **YonKaGor**, I do not own Routine and i recommend supporting said person. also all bg music comes from same person, so really go support their work! (ONCE AGAIN, I DONT OWN ANY OF THE CHARACTERS OR SONGS!)
+    >> but almost all code is made by scratch by me. and you are allowed to use it for ur own projects.
 
 ---
 
