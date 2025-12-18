@@ -7,12 +7,13 @@ def get_player_name(window_surface):
     while is_typing:
         
         window_surface.blit(bg, (0,0))
-        render_text(window_surface, "The It's Normal Clicker V1.4", 50, (0, 0, 0), (15, 34))
-        render_text(window_surface, "The It's Normal Clicker V1.4", 50, (255, 255, 255), (13, 32))
+        render_text(window_surface, "The It's Normal Clicker V1.5", 50, (0, 0, 0), (15, 34))
+        render_text(window_surface, "The It's Normal Clicker V1.5", 50, (255, 255, 255), (13, 32))
         render_text(window_surface, "Created by AH6904", 20, (0, 0, 0), (11, 80))
         render_text(window_surface, "Created by AH6904", 20, (255, 255, 255), (10, 78))
-        render_text(window_surface, "Enter name:", 36, (0, 120, 255), (50, 240))
-        render_text(window_surface, input_string, 36, (0, 120, 255), (220, 240))
+        render_text(window_surface, "@KisuRepo 2025", 20, (0, 0, 0), (662, 575))
+        render_text(window_surface, "Enter name to start:", 36, (0, 120, 255), (50, 240))
+        render_text(window_surface, input_string, 36, (0, 120, 255), (325, 240))
         
         for event in pygame.event.get():
             if event.type == pygame.QUIT:

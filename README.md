@@ -19,18 +19,19 @@ Also this imports *Pygame*, *Random* and *Pygame.locals* into the project.
 - If there are problems. Contact me on here or discord:
 
 ***.kisurepo_kristalli.***
-
+##### I recommend contacting me on discord as i'm more active there.
+---
 # Changelogs:
 V: 1.0 1st Creation
 --
 - Got the program to run with simple code
 - First Pieces of code done
 ---
-V: 1.1 Organization Update
+V: 1.0.1 | 1.1 Organization Update
 --
 - Added changing captions
 - Added TwCenMt Font to texts
-- Nicely Organized code
+- Nicely organized code
 - New BG code and look
 ---
 V: 1.2 Code Enlargement Update
@@ -41,6 +42,9 @@ V: 1.2 Code Enlargement Update
 - Caption look changed
 - Moved Button.class to separate .py file
 - Unfinished saving code
+
+### V: 1.2.1
+- Updated README
 ---
 V: 1.3 Shops & Songs Update + Misc
 --
@@ -51,6 +55,9 @@ V: 1.3 Shops & Songs Update + Misc
 - Shortened some of the code
 - Organized assets into folders
 - Changed how the text is rendered in main.py
+
+### V: 1.3.1
+- Updated README
 ---
 V: 1.4 Clicking and Claking Update + Misc
 --
@@ -62,12 +69,21 @@ V: 1.4 Clicking and Claking Update + Misc
 - Removed the randomization of clicking sounds
 - > Added disclaimer section to README
 ---
+V: 1.5 NoName Update
+--
+- Added copyright logo in corner
+- Added Close button
+- Skipping songs now will not be randomized. but after a song ends it will be random
+- Added extra printing. And writing to .txt files
+---
 ## FUTURE PLANS:
 - I am thinking of trying to make more buttons to click and actual prints when you reach a certain click amount. maybe also changing BG's but i'm not so sure about that yet.
 
 - Add working resizability to the window so it's not stuck at the current size.
 
 - Add working saving progress so you can continue from u left off.
+
+(**Might not happen**)
 ---
 > ## Copyright:
  > Routine character is owned by the person **YonKaGor**, I do not own Routine and i recommend supporting said person. also all bg music comes from same person, so really go support their work! (ONCE AGAIN, I DONT OWN ANY OF THE CHARACTERS OR SONGS!)
