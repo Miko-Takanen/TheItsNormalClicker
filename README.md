@@ -75,6 +75,10 @@ V: 1.5 NoName Update
 - Added Close button
 - Skipping songs now will not be randomized. but after a song ends it will be random
 - Added extra printing. And writing to .txt files
+
+### 1.5.1
+- tried to clean up code how issue stated
+- should be working.
 ---
 ## FUTURE PLANS:
 - I am thinking of trying to make more buttons to click and actual prints when you reach a certain click amount. maybe also changing BG's but i'm not so sure about that yet.

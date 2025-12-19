@@ -1,11 +1,20 @@
 import pygame
+from utilities import render_text, COLOR_SKY_BLUE, COLOR_YELLOW, WINDOW_WIDTH, WINDOW_HEIGHT
+
+pygame.init()
+
+window_surface = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
 
 def get_player_name(window_surface):
     input_string = ""
     is_typing = True
 
+    bg = pygame.Surface((WINDOW_WIDTH, WINDOW_HEIGHT))
+    bg.fill(COLOR_SKY_BLUE)
+    pygame.draw.line(bg, COLOR_YELLOW, (0, 300), (WINDOW_WIDTH, 300), 50)
+    pygame.draw.line(bg, COLOR_YELLOW, (0, 350), (WINDOW_WIDTH, 350), 20)
+
     while is_typing:
-        
         window_surface.blit(bg, (0,0))
         render_text(window_surface, "The It's Normal Clicker V1.5", 50, (0, 0, 0), (15, 34))
         render_text(window_surface, "The It's Normal Clicker V1.5", 50, (255, 255, 255), (13, 32))
@@ -26,7 +35,6 @@ def get_player_name(window_surface):
                 else:
                     input_string += event.unicode
 
-        
         pygame.display.flip()
     
     return input_string
@@ -36,10 +44,4 @@ def render_text(surface, text, font_size, color, position):
     rendered_text = font.render(text, True, color)
     surface.blit(rendered_text, position)
 
-color1 = (165, 200, 230)
-color2 = (255, 206, 27)
-bg = pygame.Surface((800, 600))
-bg.fill(color1)
-
-pygame.draw.line(bg, color2, (0, 300), (800, 300), 50)
-pygame.draw.line(bg, color2, (0, 350), (800, 350), 20)
+pygame.display.flip()

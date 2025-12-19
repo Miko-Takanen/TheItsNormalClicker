@@ -1,10 +1,14 @@
 import pygame
 from button import Shop_Button
 
-
-shop_buff = { 
-    "Auto Clicker": {"cost": 50, "effect": "Adds 1 click per second"},
+shop_buff = {
+    "Auto Clicker": {
+        "cost": 50,
+        "effect": "Adds 1 click per second",
+        "owned": False
+    }
 }
+
 class Shop():
     def open_shop(window_surface, count):
         shop_running = True
