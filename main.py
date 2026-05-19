@@ -27,11 +27,11 @@ with open(CLICKER_COUNT_FILE, "a") as file:
     print(f"Player's Name: {player_name}")
 #-----------------------------------------:
 
-#:IMAGES----------------------------------------------------------------------:
+#:IMAGES------------------------------------------------------:
 normal_img = pygame.image.load(IMG_BTN_NORMAL).convert_alpha()
 hover_img = pygame.image.load(IMG_BTN_HOVER).convert_alpha()
 down_img = pygame.image.load(IMG_BTN_DOWN).convert_alpha()
-#-------------------------------------------------------------------------:
+#---------------------------------------------------------:
 
 #:CAPTIONS---:
 pygame.init()
@@ -40,7 +40,7 @@ title = f"Hi {player_name}! | {random_sentence}"
 pygame.display.set_caption(title)
 #--------------------------------:
 
-#:MUSIC FILES--:
+#:MUSIC FILES------------:
 music_files = MUSIC_FILES
 pygame.mixer.init()
 #------------------:
