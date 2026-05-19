@@ -18,7 +18,7 @@ Also this imports *Pygame*, *Random* and *Pygame.locals* into the project.
 - Do not claim your ownership of this project. Always credit me (pls)
 - If there are problems. Contact me on here or discord:
 
-***.kisurepo_kristalli.***
+***kisurepo.kristalli***
 ##### I recommend contacting me on discord as i'm more active there.
 ---
 # Changelogs:
