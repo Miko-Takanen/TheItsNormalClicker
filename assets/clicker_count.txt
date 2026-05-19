@@ -6,3 +6,45 @@ Song has been skipped.
 Song has been skipped.
 Player's Name: hj
 Player's Name: asd
+Times asd has clicked: 19
+Program has been closed.
+Player's Name: rergfd
+Game has been reset.
+Song has been skipped.
+Times rergfd has clicked: 0
+Program has been closed.
+Player's Name: 
+Times  has clicked: 0
+Program has been closed.
+Player's Name: 
+Times  has clicked: 0
+Program has been closed.
+Player's Name: 
+Times  has clicked: 0
+Program has been closed.
+Player's Name: Miko
+Game has been reset.
+Game has been reset.
+Song has been skipped.
+Song has been skipped.
+Song has been skipped.
+Song has been skipped.
+Song has been skipped.
+Song has been skipped.
+Song has been skipped.
+Song has been skipped.
+Song has been skipped.
+Song has been skipped.
+Song has been skipped.
+Song has been skipped.
+Song has been skipped.
+Song has been skipped.
+Song has been skipped.
+Song has been skipped.
+Song has been skipped.
+Song has been skipped.
+Song has been skipped.
+Song has been skipped.
+Song has been skipped.
+Times Miko has clicked: 0
+Program has been closed.
